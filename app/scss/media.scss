@@ -127,6 +127,10 @@
     height: 105px;
     top: 11%;
   }
+  .popup_bonus{
+
+  }
+
 }
 
 @media (max-width:780px) {
@@ -183,7 +187,22 @@
     }
   }
 }
-
+@media (max-width:730px) {
+  .popup_bonus-logo{
+    font-size: 40px;
+    margin-bottom: 85px;
+  }
+  .popup_bonus-text {
+  font-size: 35px;
+  margin-bottom: 105px;
+  span{
+    font-size: 50px;
+  }
+  }
+  .claim-bonus{
+    font-size: 35px;
+  }
+}
 @media(max-width:710px) {
   .wheel_wrap:before {
     max-width: 700px;
@@ -240,6 +259,7 @@
     img {
       width: 300px;
     }
+
   }
 
   .deposit {
@@ -252,6 +272,18 @@
 
   .deposit .deposit__bonus {
     font-size: 20px;
+  }
+  .popup_bonus-logo{
+    font-size: 35px;
+  }
+  .popup_bonus-text {
+  font-size: 35px;
+  span{
+    font-size: 40px;
+  }
+  }
+  .claim-bonus{
+    font-size: 35px;
   }
 }
 
@@ -285,6 +317,20 @@
   .wheel_wrap:after {
   top: 23%;
   }
+  .popup_bonus-logo{
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+  .popup_bonus-text {
+  font-size: 30px;
+  margin-bottom: 100px;
+  span{
+    font-size: 35px;
+  }
+  }
+  .claim-bonus{
+    font-size: 30px;
+  }
 }
 
 
@@ -317,7 +363,20 @@
     padding: 40px 50px 86px;
   }
 
-
+  .popup_bonus-logo{
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+  .popup_bonus-text {
+  font-size: 27px;
+  margin-bottom: 90px;
+  span{
+    font-size: 30px;
+  }
+  }
+  .claim-bonus{
+    font-size: 27px;
+  }
 
 
 }
@@ -345,6 +404,27 @@
     max-width: 70px;
     height: 70px;
   } 
+
+}
+@media (max-width:440px) {
+  .popup_bonus-logo{
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+  .popup_bonus-text {
+  font-size: 27px;
+  margin-bottom:  90px;
+  span{
+    font-size: 30px;
+  }
+  }
+  .claim-bonus{
+    font-size: 27px;
+  }
+  .popup_bonus-box {
+  padding: 80px 30px;
+  }
+
 }
 @media (max-width:430px) {
   .wheel_wrap:before {
@@ -354,9 +434,7 @@
   
 }
 
-@media (max-width:440px) {
 
-}
 
 @media (max-width:400px) {
 
@@ -444,9 +522,27 @@
   }
  
   .wheel_wrap:after{
-    top: 34%;
+    top: 29%;
    
   } 
+  .popup_bonus-logo{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .popup_bonus-text {
+  font-size: 23px;
+  margin-bottom:  80px;
+  span{
+    font-size: 24px;
+  }
+  }
+  .claim-bonus{
+    font-size: 21px;
+  }
+  .popup_bonus-box {
+  padding: 70px 30px;
+  }
+  
 }
 
 

@@ -51,6 +51,11 @@ span {
   display: inline-block;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 .input {
   display: flex;
   flex-direction: column;

@@ -3,8 +3,8 @@
 .body-img {
   display: flex;
   justify-content: end;
- padding-left: 70%;
- 
+  padding-left: 70%;
+
 }
 
 .sloterra {
@@ -45,14 +45,14 @@
   height: 139px;
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 12%;
   transform: translate(-50%, -50%);
   background-size: contain;
   z-index: 2;
   content: '';
 }
 
-.wheel_wrap:before{
+.wheel_wrap:before {
   background: url("../img/BACK.png") 0 0 no-repeat;
   max-width: 892px;
   width: 100%;
@@ -91,16 +91,16 @@
 .wheel_wrap__wheels {
   position: relative;
   margin: auto;
-  
+
 }
 
-.wheel_spinner--center img{
+.wheel_spinner--center img {
   width: 100%;
   max-width: 397px;
   height: 397px;
 }
 
-.wheel_spinner_img{
+.wheel_spinner_img {
   max-width: 595px;
   height: 595px;
   width: 100%;
@@ -158,15 +158,15 @@
   }
 
   70% {
-    transform: rotate(724deg);
+    transform: rotate(854deg);
   }
 
   80% {
-    transform: rotate(714deg);
+    transform: rotate(845deg);
   }
 
   100% {
-    transform: rotate(720deg);
+    transform: rotate(838deg);
   }
 }
 
@@ -199,17 +199,18 @@
   }
 
   70% {
-    transform: rotate(-724deg);
+    transform: rotate(-665deg);
   }
 
   80% {
-    transform: rotate(-714deg);
+    transform: rotate(-654deg);
   }
 
   100% {
-    transform: rotate(-720deg);
+    transform: rotate(-660deg);
   }
 }
+
 
 // POPUP 
 .popup_overlay {
@@ -222,6 +223,72 @@
   z-index: 4;
   display: none;
   overflow: auto;
+}
+
+.popup_bonus-box {
+  text-align: center;
+}
+
+.popup_bonus {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popup_bonus-box {
+  position: relative;
+  margin: auto;
+  border: 3px solid #FFD79A;
+  max-width: 726px;
+  width: 100%;
+  background: radial-gradient(119.52% 89.79% at 50% 21.86%, rgba(56, 56, 56, 0.9) 0%, rgba(33, 33, 33, 0.9) 49.48%, rgba(21, 21, 21, 0.9) 100%);
+  border-radius: 50px;
+  padding: 106px 73px;
+  z-index: 2;
+}
+
+.popup_bonus-logo {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 94px;
+}
+
+.bonus_logo {
+  background: radial-gradient(94.46% 158.2% at 50% 50%, #FFDC77 0%, #934600 98.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 2px 3px rgba(181, 82, 26, 0.64);
+}
+
+.claim-bonus {
+  position: relative;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  padding: 18px 42px;
+  background: linear-gradient(90deg, #826313 0%, #FFE589 101.87%);
+  border-radius: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.popup_bonus-text {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 129px;
+
+
+  span {
+    font-weight: 700;
+    font-size: 60px;
+    color: #FFD55B;
+    text-shadow: 0px 0px 10px #FF9921;
+    filter: drop-shadow(0px 0px 3px #EA8003);
+  }
 }
 
 .popup_window {
@@ -510,5 +577,7 @@
     }
   }
 }
+
+
 
 @import "media.scss";

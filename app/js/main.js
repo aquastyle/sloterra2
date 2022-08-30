@@ -9,12 +9,21 @@ $(function () {
 			$spinner = $('.wheel_spinner--main'),
 			$spinnerTwo = $('.wheel_spinner--center'),
 			$popupOverlay = $('.popup_overlay'),
-			$popupWindow = $('.popup_window');
+			$popupBonus = $('.popup_bonus'),
+			$popupWindow = $('.popup_window'),
+			$claimBonus = $('#claimBonus');
+
 
 		$button.click(function () {
 			if ($button.hasClass('spin')) {
 				spin();
 			}
+		});
+
+		$claimBonus.on('click', function () {
+			localStorage.currentSpin = 'HTMLC_1237_spin';
+			$popupBonus.fadeOut();
+			$popupWindow.fadeIn();
 		});
 
 		function spin() {
@@ -31,7 +40,7 @@ $(function () {
 			setTimeout(function () {
 				// localStorage.currentSpin = 'HTMLC_1237_spin';
 				$popupOverlay.fadeIn();
-				$popupWindow.fadeIn();
+				$popupBonus.fadeIn();
 			}, 7000);
 		}
 	};
