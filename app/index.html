@@ -28,6 +28,7 @@
       </div>
       <div class="wheel_wrap__wheels">
         <div class="wheel_spinner__wrapper">
+          <div class="wheel_spinner__wrapper--relative"></div>
           <div class="wheel_spinner wheel_spinner--main wheel_spinner_animated">
             <img src="img/Zovnishne_koleso.png" alt="" class="wheel_spinner_img">
           </div>
@@ -51,17 +52,34 @@
   <div class="popup_overlay">
     <div class="popup_bonus">
       <div class="popup_bonus-box">
+        <div class="popup_bonus-decorations">
+          <div class="popup_bonus-decorations-item popup_bonus-decorations-item--top">
+            <img src="img/Rectangle-top.svg" alt="">
+          </div>
+          <div class="popup_bonus-decorations-item popup_bonus-decorations-item--right">
+            <img src="img/Rectangle-right.svg" alt="">
+          </div>
+          <div class="popup_bonus-decorations-item popup_bonus-decorations-item--bottom">
+            <img src="img/Rectangle-bottom.svg" alt="">
+          </div>
+          <div class="popup_bonus-decorations-item popup_bonus-decorations-item--left">
+            <img src="img/Rectangle-left.svg" alt="">
+          </div>
+        </div>
         <div class="popup_bonus-logo">
           <span class="bonus_logo">
             Congratulations!
           </span>
-         
+
         </div>
         <div class="popup_bonus-text">
           You won
           <span>1400 EUR + 225 FS</span>
         </div>
         <button type="submit" class="claim-bonus" id="claimBonus" href="#">Claim Bonus</button>
+        <div class="popup_bonus-terms">
+          <a href="#" target="_blank">Bonus Terms&Conditions</a>
+        </div>
       </div>
     </div>
     <div class="popup_window">
@@ -121,7 +139,8 @@
             <label>
               <input class="check__box" type="checkbox">
               <span class="check-style"></span>
-              I unconditionally agree with "Terms & Conditions", "Data Policy", "Cookie Policy" and that I am older than
+              I unconditionally agree with <a href="#" target="_blank">"Terms & Conditions"</a>, "Data Policy", "Cookie
+              Policy" and that I am older than
               18 years old.
             </label>
           </div>
@@ -133,6 +152,7 @@
         </div>
       </div>
     </div>
+  </div>
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
