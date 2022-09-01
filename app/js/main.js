@@ -30,8 +30,15 @@ $(function () {
 			$button.removeClass('spin').addClass('disabled');
 
 			$spinner
-				.addClass('wheel_spinner_animated_1')
+				// .addClass('wheel_spinner_animated_1')
+				.addClass('wheel_spinner_animated_again')
 				.removeClass('wheel_spinner_animated')
+
+			setTimeout(function () {
+				$spinner
+					.removeClass('wheel_spinner_animated_again')
+					.addClass('wheel_spinner_animated_1')
+			}, 8000);
 
 			$spinnerTwo
 				.addClass('wheel_spinner_animated_2')
@@ -41,7 +48,7 @@ $(function () {
 				// localStorage.currentSpin = 'HTMLC_1237_spin';
 				$popupOverlay.fadeIn();
 				$popupBonus.fadeIn();
-			}, 7000);
+			}, 14700);
 		}
 	};
 });

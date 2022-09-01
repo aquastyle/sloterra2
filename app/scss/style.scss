@@ -65,6 +65,13 @@
   content: '';
 }
 
+.wheel_btn.disabled {
+  .wheel_btn__inner {
+    filter: brightness(0.7);
+    cursor: not-allowed;
+  }
+}
+
 .wheel_btn__inner {
   background: url("../img/Button_spin.png") 0 0 no-repeat;
   max-width: 182px;
@@ -77,9 +84,8 @@
   background-size: contain;
   cursor: pointer;
   z-index: 3;
+  transition: filter .1s;
 }
-
-
 
 .wheel_spinner__wrapper {
   position: absolute;
@@ -134,6 +140,10 @@
   animation: 3s spinner ease-in-out infinite;
 }
 
+.wheel_spinner.wheel_spinner_animated_again {
+  animation: 7s spinToTryAgain ease-in-out forwards;
+}
+
 .wheel_spinner.wheel_spinner_animated_1 {
   animation: 7s spinTo1 ease-in-out forwards;
 }
@@ -152,21 +162,39 @@
   }
 }
 
-@keyframes spinTo1 {
+@keyframes spinToTryAgain {
   0% {
     transform: rotate(-60deg);
   }
 
   70% {
-    transform: rotate(854deg);
+    transform: rotate(785deg);
   }
 
-  80% {
-    transform: rotate(845deg);
+  85% {
+    transform: rotate(770deg);
   }
 
   100% {
-    transform: rotate(838deg);
+    transform: rotate(778deg);
+  }
+}
+
+@keyframes spinTo1 {
+  0% {
+    transform: rotate(778deg);
+  }
+
+  70% {
+    transform: rotate(1562deg);
+  }
+
+  80% {
+    transform: rotate(1553deg);
+  }
+
+  100% {
+    transform: rotate(1557deg);
   }
 }
 
@@ -211,7 +239,6 @@
   }
 }
 
-
 // POPUP 
 .popup_overlay {
   position: absolute;
@@ -225,10 +252,6 @@
   overflow: auto;
 }
 
-.popup_bonus-box {
-  text-align: center;
-}
-
 .popup_bonus {
   display: flex;
   width: 100%;
@@ -238,7 +261,8 @@
 .popup_bonus-box {
   position: relative;
   margin: auto;
-  border: 3px solid #FFD79A;
+  text-align: center;
+  border: 2px solid #FFD79A;
   max-width: 726px;
   width: 100%;
   background: radial-gradient(119.52% 89.79% at 50% 21.86%, rgba(56, 56, 56, 0.9) 0%, rgba(33, 33, 33, 0.9) 49.48%, rgba(21, 21, 21, 0.9) 100%);
@@ -303,6 +327,7 @@
   padding: 48px 87px 86px;
   max-width: 624px;
   width: 100%;
+  border: 2px solid #FFD79A;
   background-color: #212121;
   border-radius: 51px;
   margin: 60px auto;
@@ -440,6 +465,7 @@
 
 .log-in {
   &__text {
+    display: inline-block;
     color: #989898;
     font-weight: 500;
     font-size: 16px;
@@ -447,6 +473,7 @@
   }
 
   &__link {
+    display: inline-block;
     color: #FFCA40;
     font-weight: 500;
     font-size: 20px;
