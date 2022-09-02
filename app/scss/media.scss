@@ -52,10 +52,6 @@
   .body-img img {
     height: 430px;
   }
-
-  .wheel_spinner__wrapper--relative::after {
-    max-width: 85px;
-  }
 }
 
 @media (max-width:780px) {
@@ -135,11 +131,6 @@
     max-width: 160px;
     height: 160px;
   }
-
-  .wheel_spinner__wrapper--relative::after {
-    height: 95px;
-    top: -65px;
-  }
 }
 
 @media (max-width:640px) {
@@ -217,10 +208,6 @@
   .popup_bonus-terms a {
     font-size: 16px;
   }
-
-  .wheel_spinner__wrapper--relative::after {
-    top: -15px;
-  }
 }
 
 @media (max-width:570px) {
@@ -266,14 +253,6 @@
   .claim-bonus {
     padding: 20px;
   }
-
-  .wheel_spinner__wrapper--relative::after {
-    width: 60px;
-    height: 66px;
-    top: 25px;
-  }
-
-
 }
 
 @media (max-width:520px) {
@@ -350,11 +329,6 @@
 }
 
 @media (max-width:480px) {
-  .wheel_wrap:before {
-    width: 450px;
-    height: 450px;
-  }
-
   .wheel_spinner_img {
     max-width: 300px;
     height: 300px;
@@ -372,10 +346,6 @@
 
   .body-img img {
     height: 360px;
-  }
-
-  .wheel_spinner__wrapper--relative::after {
-    top: 65px;
   }
 }
 
@@ -547,11 +517,6 @@
     max-width: 120px;
     height: 120px;
   }
-
-  .wheel_spinner__wrapper--relative::after {
-    top: 5px;
-    max-width: 65px;
-  }
 }
 
 @media (max-height: 670px) {
@@ -595,10 +560,6 @@
 
   .claim-bonus {
     padding: 20px;
-  }
-
-  .wheel_spinner__wrapper--relative::after {
-    top: 35px;
   }
 }
 
@@ -654,11 +615,6 @@
 
   .box img {
     max-width: 70px;
-  }
-
-  .wheel_spinner__wrapper--relative::after {
-    top: 50px;
-    width: 50px;
   }
 
   .sloterra img {
