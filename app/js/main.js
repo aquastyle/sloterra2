@@ -38,7 +38,7 @@ $(function () {
 				$spinner
 					.removeClass('wheel_spinner_animated_again')
 					.addClass('wheel_spinner_animated_1')
-			}, 6000);
+			}, 5000);
 
 			$spinnerTwo
 				.addClass('wheel_spinner_animated_2')
@@ -48,7 +48,7 @@ $(function () {
 				// localStorage.currentSpin = 'HTMLC_1237_spin';
 				$popupOverlay.fadeIn();
 				$popupBonus.fadeIn();
-			}, 11700);
+			}, 10700);
 		}
 	};
 });
